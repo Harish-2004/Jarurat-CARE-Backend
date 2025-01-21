@@ -1,4 +1,4 @@
-const Resource = require("../models/resourceModel");
+const Resource = require("../models/resourcemodel");
 
 exports.createResource = async (req, res) => {
   try {
