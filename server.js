@@ -8,6 +8,9 @@ const app = express();
 app.use(express.json());
 
 connectDB();
+app.get('/', (req, res) => {
+    res.send('Welcome to the API!');
+});
 
 app.use("/api/resources", resourceRoutes);
 app.use("/api/users", userRoutes);
